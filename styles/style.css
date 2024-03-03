@@ -22,7 +22,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font), Arial, Helvetica, sans-serif;;
+  font-family: var(--accent-font), Arial, Helvetica, sans-serif;
   mix-blend-mode: difference;
 }
 
