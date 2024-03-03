@@ -4,3 +4,49 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --background-color: rgb(0 0 0);
+        --color: rgb(0 204 20);
+        --button-text-color: rgb(0 204 20);
+        --accent-color: rgb(0 204 20 / 0.6);
+        --main-weight: 465;
+        --heading-weight: 785;
+        --background-image: repeating-linear-gradient(90deg, #000 0 2px , transparent 2px 4px), repeating-linear-gradient(#000 0 2px, transparent 2px 4px), linear-gradient(#007f0c, #004306);
+        --text-stroke-color: rgb(0 0 0);
+        --contour-heart-color: rgb(0 204 20);
+        --heart-color: rgb(0 204 20);;
+        --sparks-color: rgb(0 204 20);;
+    }
+}
+
+:root.theme-dark {
+    --background-color: rgb(0 0 0);
+    --color: rgb(0 204 20);
+    --button-text-color: rgb(0 204 20);
+    --accent-color: rgb(0 204 20 / 0.6);
+    --main-weight: 465;
+    --heading-weight: 785;
+    --background-image: repeating-linear-gradient(90deg, #000 0 2px , transparent 2px 4px), repeating-linear-gradient(#000 0 2px, transparent 2px 4px), linear-gradient(#007f0c, #004306);
+    --text-stroke-color: rgb(0 0 0);
+    --contour-heart-color: rgb(0 204 20);
+    --heart-color: rgb(0 204 20);;
+    --sparks-color: rgb(0 204 20);;
+}
+
+:root.theme-light {
+    --background-color: #FFF;
+    --accent-color: rgb(0 0 0 / 0.6);
+    --color: rgb(0 0 0);
+    --main-weight: 400;
+    --heading-weight: 700;
+    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px , transparent 2px 4px), repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --text-stroke-color: rgb(255 255 255);
+    --button-text-color: white;
+    --contour-heart-color: rgb(0 0 0);
+    --heart-color: #F00;
+    --sparks-color: #F00;
+}
+
