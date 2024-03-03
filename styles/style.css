@@ -153,7 +153,7 @@
 }
 
 .theme-menu__button:focus {
-  outline: none; 
+  outline: none;
 }
 
 .theme-menu__button:focus-visible {
@@ -206,7 +206,7 @@
 @media (width <= 375px) {
 
   .card__heading {
-    padding: 3.5px 10px 5.5px; 
+    padding: 3.5px 10px 5.5px;
   }
 }
 
