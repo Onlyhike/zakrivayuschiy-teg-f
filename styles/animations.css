@@ -12,3 +12,25 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes marker {
+
+    to {
+      inset-inline-start: -18px;
+    }
+  }
+
+@keyframes heart-scale {
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes sparks-opacity {
+
+    to {
+      opacity: 1;
+    }
+  }
+  
