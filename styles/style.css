@@ -288,24 +288,26 @@
   transition: opacity 0.3s ease 0.03s;
 }
 
+.main-body {
+  transition: opacity 0.3s ease;
+}
+
 .sparks,
 .main-body,
 .core {
   opacity: 0;
 }
 
-.card__icon-button:hover .core {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.main-body {
-  transition: opacity 0.3s ease;
-}
-
-.card__icon-button:hover .main-body {
-  opacity: 1;
-  transition: opacity 0.3s ease 0.05s;
+@media (any-hover: hover) {
+  .card__icon-button:hover .core {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card__icon-button:hover .main-body {
+    opacity: 1;
+    transition: opacity 0.3s ease 0.05s;
+  } 
 }
 
 .card__icon-button:active .core {
