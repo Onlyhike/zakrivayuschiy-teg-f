@@ -39,6 +39,7 @@
 }
 
 @media (width <= 375px) {
+
   .animated-button {
       display: flex;
       flex-direction: column;
@@ -61,6 +62,7 @@
 }
 
 @media (any-hover: hover) {
+
   .animated-button:hover:before {
       transform: scaleX(1);
   }
@@ -99,6 +101,7 @@
 }
 
 @media (width <= 375px) {
+
   .header {
       inline-size: 100%;
   }
@@ -107,7 +110,7 @@
 .header__heading {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   line-height: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
-  font-weight: 400;
+  font-weight: var(--main-weight);
   text-align: center;
   margin: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) 0 20px;
 }
@@ -190,11 +193,12 @@
   border-block-end: 2px solid var(--color);
   padding: 5px 10px 4px;
   font-size: 18px;
+  font-variation-settings: "wght" var(--heading-weight);
   line-height: 22px;
-  letter-spacing: 0.015em;
 }
 
 @media (width <= 375px) {
+
   .card__heading {
       padding: 3.5px 10px 5.5px;
   }
@@ -246,6 +250,7 @@
 }
 
 @supports ((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
+
   .card__label {
       -webkit-text-stroke: 1px var(--text-stroke-color);
       text-stroke: 1px var(--text-stroke-color);
@@ -341,7 +346,14 @@
 }
 
 .card__like-button {
-  padding: 12px 35px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 20%;
+}
+
+.card__button-set:has(.is-liked) .card__like-button {
+  
 }
 
 .save-button {
@@ -359,6 +371,7 @@
 }
 
 @media (width <= 375px) {
+
   .floppy-save-button {
       inline-size: 28px;
       block-size: 28px;
@@ -387,6 +400,7 @@
 }
 
 @media (width <= 375px) {
+
   .dialog {
       padding: 32px 42px;
   }
