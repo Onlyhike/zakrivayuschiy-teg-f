@@ -352,10 +352,6 @@
   inline-size: 20%;
 }
 
-.card__button-set:has(.is-liked) .card__like-button {
-  
-}
-
 .save-button {
   margin: 50px auto 103px;
   padding: 9px clamp(1.25rem, 1.034rem + 0.923vw, 1.438rem) 16px;
